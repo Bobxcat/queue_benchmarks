@@ -17,12 +17,6 @@ trait TestInput: Clone + Eq + Sized {
     fn get_input(length: usize) -> Vec<Self>;
 }
 
-// impl TestInput for String {
-//     fn get_input(length: usize) -> Vec<Self> {
-//         todo!()
-//     }
-// }
-
 impl TestInput for i32 {
     fn get_input(length: usize) -> Vec<Self> {
         let mut v = vec![];
